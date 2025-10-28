@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Técnico en Ciberseguridad — Perfil</title>
+    <meta name="description" content="Perfil profesional de un técnico en ciberseguridad: servicios, habilidades, certificaciones y contacto." />
+    <style>
+        :root{
+            --bg:#0f1724; --card:#0b1220; --accent:#00c2a8; --muted:#9aa6b2; --glass:rgba(255,255,255,0.03);
+            --maxw:1100px; --radius:10px; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0; background:linear-gradient(180deg,#071025 0%, #071021 60%, #071018 100%); color:#e6eef3;
+            -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; padding:32px;
+            display:flex; justify-content:center;
+        }
+        .container{width:100%; max-width:var(--maxw); margin:auto;}
+        header{
+            display:flex; align-items:center; justify-content:space-between; gap:16px;
+            margin-bottom:28px;
+        }
+        .brand{display:flex; gap:12px; align-items:center;}
+        .logo{
+            width:64px; height:64px; background:linear-gradient(135deg,var(--accent),#2bd4ff);
+            border-radius:12px; display:grid; place-items:center; color:#042024; font-weight:700; font-size:20px;
+            box-shadow:0 6px 18px rgba(0,0,0,0.6);
+        }
+        nav a{color:var(--muted); text-decoration:none; margin-left:18px; font-size:14px}
+        nav a:hover{color:#fff}
+        main{display:grid; grid-template-columns:1fr 360px; gap:22px; align-items:start}
+        @media (max-width:920px){ main{grid-template-columns:1fr; padding-bottom:40px} header{flex-direction:column; align-items:flex-start} nav a{margin-left:0; margin-right:12px}}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:var(--radius); padding:18px; box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+        .hero{display:flex; gap:18px; align-items:center}
+        .avatar{
+            width:120px; height:120px; border-radius:14px; background:var(--glass); display:grid; place-items:center; font-size:28px; color:var(--accent);
+            box-shadow:inset 0 -10px 20px rgba(0,0,0,0.4);
+        }
+        h1{margin:0 0 6px 0; font-size:22px}
+        p.lead{margin:0; color:var(--muted); font-size:14px}
+        .tags{margin-top:12px; display:flex; gap:8px; flex-wrap:wrap}
+        .tag{background:rgba(255,255,255,0.03); padding:6px 10px; border-radius:999px; font-size:13px; color:var(--muted)}
+        .services{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:14px}
+        .service{padding:12px; border-radius:8px; background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent); display:flex; gap:12px; align-items:flex-start}
+        .sicon{width:44px; height:44px; background:rgba(0,0,0,0.25); border-radius:8px; display:grid; place-items:center; color:var(--accent)}
+        h3{margin:0; font-size:16px}
+        .muted{color:var(--muted); font-size:13px}
+        .skills{margin-top:14px; display:grid; gap:10px}
+        .skill{display:flex; justify-content:space-between; gap:12px; align-items:center}
+        .bar{height:10px; background:rgba(255,255,255,0.04); border-radius:999px; overflow:hidden; flex:1; margin-left:10px}
+        .bar > i{display:block; height:100%; background:linear-gradient(90deg,var(--accent),#2bd4ff); border-radius:999px}
+        .right-column{position:sticky; top:32px}
+        .cert-list{display:flex; flex-direction:column; gap:8px}
+        .cert{display:flex; justify-content:space-between; gap:8px; padding:10px; background:rgba(255,255,255,0.02); border-radius:8px; align-items:center}
+        .portfolio{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:12px}
+        .proj{padding:12px; border-radius:8px; background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+        form{display:flex; flex-direction:column; gap:10px}
+        input,textarea,button,select{
+            background:rgba(255,255,255,0.02); border:1px solid rgba(255,255,255,0.03); color:#e6eef3; padding:10px; border-radius:8px;
+            font:inherit;
+        }
+        textarea{min-height:100px; resize:vertical}
+        button{background:var(--accent); border:none; color:#012922; font-weight:600; cursor:pointer}
+        .links{display:flex; gap:10px; margin-top:8px}
+        a.button{background:transparent; border:1px solid rgba(255,255,255,0.06); padding:8px 12px; border-radius:8px; color:var(--muted); text-decoration:none}
+        footer{margin-top:28px; text-align:center; color:var(--muted); font-size:13px}
+        .small{font-size:12px; color:var(--muted)}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">CS</div>
+                <div>
+                    <div style="font-weight:700">Técnico en Ciberseguridad</div>
+                    <div class="small">Protección, detección y respuesta.</div>
+                </div>
+            </div>
+            <nav aria-label="Navegación principal">
+                <a href="#about">Sobre mí</a>
+                <a href="#services">Servicios</a>
+                <a href="#portfolio">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="card">
+                    <div class="hero">
+                        <div class="avatar" aria-hidden="true">TC</div>
+                        <div style="flex:1">
+                            <h1>Nombre Apellido — Técnico en Ciberseguridad</h1>
+                            <p class="lead">Especialista en pruebas de intrusión, respuesta a incidentes y auditoría de seguridad. Implemento controles prácticos para reducir riesgos y mejorar resiliencia.</p>
+                            <div class="tags" aria-hidden="true">
+                                <div class="tag">Pentesting</div>
+                                <div class="tag">SOC / SIEM</div>
+                                <div class="tag">Forense</div>
+                                <div class="tag">Hardening</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="services" style="margin-top:18px">
+                        <h2 style="font-size:18px; margin:0 0 8px 0">Servicios</h2>
+                        <div class="services">
+                            <article class="service">
+                                <div class="sicon" aria-hidden="true">
+                                    <!-- shield svg -->
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l7 4v6c0 5-4 9-7 10-3-1-7-5-7-10V6l7-4z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Pruebas de intrusión (Pentest)</h3>
+                                    <p class="muted">Evaluaciones de red, aplicaciones web y móviles con reportes y mitigaciones prácticas.</p>
+                                </div>
+                            </article>
+
+                            <article class="service">
+                                <div class="sicon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 7h18M7 7v10a5 5 0 0 0 10 0V7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Respuesta a incidentes</h3>
+                                    <p class="muted">Contención, análisis forense y coordinación de recuperación para reducir impacto.</p>
+                                </div>
+                            </article>
+
+                            <article class="service">
+                                <div class="sicon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v20M2 12h20" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Auditoría y hardening</h3>
+                                    <p class="muted">Revisión de configuraciones, controles de acceso y políticas para reducir la superficie de ataque.</p>
+                                </div>
+                            </article>
+
+                            <article class="service">
+                                <div class="sicon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 20v-6M8 4h8M6 12h12" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <h3>Formación y awareness</h3>
+                                    <p class="muted">Cursos prácticos para equipos: phishing, higiene digital y buenas prácticas de seguridad.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section id="about" style="margin-top:16px">
+                        <h2 style="font-size:18px; margin:0 0 8px 0">Habilidades técnicas</h2>
+                        <div class="skills">
+                            <div class="skill"><div class="muted">Pentesting web</div><div style="display:flex;align-items:center"><div class="bar" aria-hidden="true"><i style="width:88%"></i></div><div class="muted" style="width:40px;text-align:right">88%</div></div></div>
+                            <div class="skill"><div class="muted">Forense digital</div><div style="display:flex;align-items:center"><div class="bar"><i style="width:72%"></i></div><div class="muted" style="width:40px;text-align:right">72%</div></div></div>
+                            <div class="skill"><div class="muted">SIEM / SOC</div><div style="display:flex;align-items:center"><div class="bar"><i style="width:80%"></i></div><div class="muted" style="width:40px;text-align:right">80%</div></div></div>
+                            <div class="skill"><div class="muted">Scripting & automatización</div><div style="display:flex;align-items:center"><div class="bar"><i style="width:78%"></i></div><div class="muted" style="width:40px;text-align:right">78%</div></div></div>
+                        </div>
+                    </section>
+
+                    <section id="portfolio" style="margin-top:16px">
+                        <h2 style="font-size:18px; margin:0 0 8px 0">Proyectos destacados</h2>
+                        <div class="portfolio" aria-live="polite">
+                            <article class="proj">
+                                <strong>Red Team (aplicación financiera)</strong>
+                                <div class="small muted">Pruebas de intrusión y explotación de lógica empresarial; informe con evidencias y parches recomendados.</div>
+                            </article>
+                            <article class="proj">
+                                <strong>Implementación de SIEM</strong>
+                                <div class="small muted">Despliegue y tuning de reglas para detección temprana en entorno cloud híbrido.</div>
+                            </article>
+                            <article class="proj">
+                                <strong>Análisis forense</strong>
+                                <div class="small muted">Análisis post-incidente con adquisición de imágenes y reconstrucción de timeline.</div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <aside class="right-column">
+                <div class="card">
+                    <h3 style="margin-top:0">Certificaciones</h3>
+                    <div class="cert-list">
+                        <div class="cert"><div>OSCP / eJPT</div><div class="small muted">2023</div></div>
+                        <div class="cert"><div>CompTIA Security+</div><div class="small muted">2022</div></div>
+                        <div class="cert"><div>Cert. Forense Digital</div><div class="small muted">2021</div></div>
+                    </div>
+
+                    <div style="margin-top:14px">
+                        <a class="button" href="cv_tecnico_ciberseguridad.pdf" download="CV_Tecnico_Ciberseguridad.pdf">Descargar CV (PDF)</a>
+                        <a class="button" href="#contact" style="margin-left:8px">Contactar</a>
+                    </div>
+
+                    <section id="contact" style="margin-top:14px">
+                        <h3 style="margin:10px 0 8px 0">Contacto</h3>
+                        <form onsubmit="return handleSend(event)">
+                            <input type="text" id="name" placeholder="Nombre" required />
+                            <input type="email" id="email" placeholder="Correo electrónico" required />
+                            <select id="service" aria-label="Servicio de interés">
+                                <option value="pentest">Pruebas de intrusión</option>
+                                <option value="response">Respuesta a incidentes</option>
+                                <option value="audit">Auditoría / Hardening</option>
+                                <option value="training">Formación</option>
+                            </select>
+                            <textarea id="message" placeholder="Mensaje breve..." required></textarea>
+                            <button type="submit">Enviar mensaje</button>
+                            <div id="status" class="small muted" role="status" aria-live="polite"></div>
+                        </form>
+                        <div class="links">
+                            <a class="button" href="mailto:info@ejemplo.com">Correo</a>
+                            <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div style="height:18px"></div>
+
+                <div class="card small muted" style="text-align:center">
+                    Disponibilidad: Freelance / Contrato | Zona horaria: UTC+1
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="small">© <span id="year"></span> Técnico en Ciberseguridad — Perfil profesional</div>
+        </footer>
+    </div>
+
+    <script>
+        // Pequeña lógica: fecha y envío simulado
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function handleSend(e){
+            e.preventDefault();
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var msg = document.getElementById('message').value.trim();
+            var status = document.getElementById('status');
+            if(!name||!email||!msg){ status.textContent = 'Por favor complete todos los campos.'; return false; }
+            status.textContent = 'Mensaje preparado: abra su cliente de correo para enviar.';
+            // Abrir mailto con contenido básico (cliente predeterminado)
+            var subject = encodeURIComponent('Contacto desde perfil: ' + name);
+            var body = encodeURIComponent('Servicio: ' + document.getElementById('service').value + '\n\n' + msg + '\n\nContacto: ' + name + ' <' + email + '>');
+            window.location.href = 'mailto:info@ejemplo.com?subject=' + subject + '&body=' + body;
+            return false;
+        }
+    </script>
+</body>
+</html></div></section></div></section></div>
